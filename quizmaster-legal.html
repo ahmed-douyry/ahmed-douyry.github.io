@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizMaster — Confidentialité &amp; Suppression de compte</title>
+  <style>
+    :root {
+      --primary: #5b5fef;
+      --primary-dark: #4548c4;
+      --secondary: #ffb703;
+      --bg: #f7f8fc;
+      --card: #ffffff;
+      --text: #1a1d2e;
+      --muted: #5c6378;
+      --border: #e4e7f0;
+      --success: #2ecc71;
+      --radius: 16px;
+      --shadow: 0 8px 32px rgba(91, 95, 239, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, #7b7ff5 100%);
+      color: #fff;
+      padding: 48px 24px 64px;
+      text-align: center;
+    }
+
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+      letter-spacing: 0.03em;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      opacity: 0.92;
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: -36px auto 48px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--bg);
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .card ul {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: linear-gradient(135deg, #fff8e6 0%, #fff3cc 100%);
+      border-left: 4px solid var(--secondary);
+      border-radius: 0 12px 12px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+
+    .highlight strong {
+      color: var(--text);
+    }
+
+    .contact-box {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 20px 24px;
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 999px;
+      font-weight: 600;
+      margin-top: 12px;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .meta span {
+      background: var(--bg);
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px 40px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 22px 18px;
+      }
+
+      .hero {
+        padding: 36px 18px 56px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="badge">Hdd Apps</div>
+    <h1>QuizMaster</h1>
+    <p>Politique de confidentialité &amp; suppression de compte</p>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Éditeur de l'application</h2>
+      <p><strong>Développeur :</strong> Hdd Apps</p>
+      <p><strong>Application :</strong> QuizMaster</p>
+      <p><strong>Contact :</strong> <a href="mailto:help@amedcuir.com">help@amedcuir.com</a></p>
+      <p><strong>Dernière mise à jour :</strong> 29 juin 2026</p>
+    </section>
+
+    <section class="card">
+      <h2>Suppression de compte</h2>
+      <p>
+        Vous pouvez demander la suppression de votre compte QuizMaster et de toutes
+        les données associées (profil, scores cloud, classement, amis, défis).
+      </p>
+
+      <div class="highlight">
+        <strong>Comment demander la suppression :</strong>
+        <ol style="margin-top: 10px; padding-left: 20px; color: var(--muted);">
+          <li>Envoyez un email à <strong>help@amedcuir.com</strong></li>
+          <li>Indiquez l'adresse email utilisée pour votre compte QuizMaster</li>
+          <li>Précisez « Demande de suppression de compte » dans l'objet</li>
+        </ol>
+      </div>
+
+      <p>
+        Nous traiterons votre demande sous <strong>7 jours ouvrés</strong>.
+        La suppression est définitive et concerne :
+      </p>
+      <ul>
+        <li>Votre compte d'authentification (Firebase)</li>
+        <li>Votre profil et vos statistiques cloud</li>
+        <li>Vos scores synchronisés et votre position au classement</li>
+        <li>Vos relations d'amis et défis en cours</li>
+      </ul>
+      <p>
+        Les données stockées uniquement sur votre appareil (scores locaux, paramètres)
+        peuvent être effacées en désinstallant l'application ou via les paramètres
+        de l'app.
+      </p>
+
+      <div class="contact-box">
+        <p>Demande de suppression de compte</p>
+        <a href="mailto:help@amedcuir.com?subject=Suppression%20de%20compte%20QuizMaster">help@amedcuir.com</a>
+        <br />
+        <a class="btn" href="mailto:help@amedcuir.com?subject=Suppression%20de%20compte%20QuizMaster">Envoyer une demande</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Politique de confidentialité</h2>
+
+      <h3>1. Présentation</h3>
+      <p>
+        QuizMaster est une application de quiz éditée par <strong>Hdd Apps</strong>.
+        Cette politique décrit quelles données sont collectées, comment elles sont
+        utilisées et vos droits.
+      </p>
+
+      <h3>2. Données collectées</h3>
+      <ul>
+        <li><strong>Compte :</strong> adresse email, pseudo (si vous créez un compte)</li>
+        <li><strong>Jeu :</strong> scores, statistiques, historique de quiz, préférences</li>
+        <li><strong>Social :</strong> amis, défis, classement global (si connecté)</li>
+        <li><strong>Publicités :</strong> identifiants publicitaires via Google AdMob</li>
+        <li><strong>Technique :</strong> données d'utilisation anonymes pour le bon fonctionnement des services</li>
+      </ul>
+
+      <h3>3. Utilisation des données</h3>
+      <ul>
+        <li>Fonctionnement du jeu et sauvegarde de vos progrès</li>
+        <li>Synchronisation cloud et classement entre joueurs</li>
+        <li>Authentification et gestion de votre compte</li>
+        <li>Affichage de publicités personnalisées ou non (AdMob)</li>
+        <li>Amélioration de l'application</li>
+      </ul>
+
+      <h3>4. Services tiers</h3>
+      <p>Nous utilisons les services suivants :</p>
+      <ul>
+        <li><strong>Google Firebase</strong> — authentification et base de données cloud</li>
+        <li><strong>Google AdMob</strong> — affichage de publicités (bannières, interstitiels, vidéos récompensées)</li>
+        <li><strong>Google Play Services</strong> — connexion Google (si activée)</li>
+      </ul>
+      <p>
+        Ces services peuvent collecter des données selon leurs propres politiques :
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+      </p>
+
+      <h3>5. Publicités</h3>
+      <p>
+        QuizMaster affiche des publicités via Google AdMob. AdMob peut utiliser
+        l'identifiant publicitaire de votre appareil pour diffuser et mesurer les
+        annonces. Vous pouvez limiter la personnalisation des pubs dans les
+        paramètres de votre appareil Android.
+      </p>
+
+      <h3>6. Stockage local</h3>
+      <p>
+        L'application fonctionne hors ligne. Les questions et une partie de vos
+        données (scores, paramètres) sont stockées localement sur votre appareil.
+        Vous pouvez exporter ou importer une sauvegarde JSON depuis les paramètres.
+      </p>
+
+      <h3>7. Conservation des données</h3>
+      <p>
+        Les données cloud sont conservées tant que votre compte est actif.
+        Après une demande de suppression, elles sont effacées sous 7 jours ouvrés.
+      </p>
+
+      <h3>8. Sécurité</h3>
+      <p>
+        Les données sont transmises de manière chiffrée (HTTPS/TLS). Nous mettons
+        en œuvre des mesures raisonnables pour protéger vos informations.
+      </p>
+
+      <h3>9. Vos droits</h3>
+      <p>Vous pouvez à tout moment :</p>
+      <ul>
+        <li>Accéder à vos données via l'application</li>
+        <li>Exporter vos données (sauvegarde JSON)</li>
+        <li>Demander la suppression de votre compte (voir section ci-dessus)</li>
+        <li>Nous contacter pour toute question : <a href="mailto:help@amedcuir.com">help@amedcuir.com</a></li>
+      </ul>
+
+      <h3>10. Mineurs</h3>
+      <p>
+        QuizMaster s'adresse au grand public. Si vous êtes parent et pensez que
+        votre enfant nous a fourni des données personnelles, contactez-nous à
+        <a href="mailto:help@amedcuir.com">help@amedcuir.com</a>.
+      </p>
+
+      <h3>11. Modifications</h3>
+      <p>
+        Cette politique peut être mise à jour. La date de dernière mise à jour
+        sera modifiée en haut de cette page.
+      </p>
+    </section>
+
+    <div class="meta">
+      <span>Développeur : Hdd Apps</span>
+      <span>QuizMaster</span>
+      <span>help@amedcuir.com</span>
+    </div>
+
+  </main>
+
+  <footer>
+  <p>© 2026 Hdd Apps — QuizMaster. Tous droits réservés.</p>
+  <p><a href="mailto:help@amedcuir.com">help@amedcuir.com</a></p>
+  </footer>
+
+</body>
+</html>
